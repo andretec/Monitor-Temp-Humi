@@ -197,18 +197,18 @@ void loop(void)
         for (int i=0; i <= 126; i++)
           {
               EEPROM.get(eeAddress, tempEEPROM);
-              Serial.print("[");
-              Serial.print(tempEEPROM);
-              Serial.println("]");
+              //Serial.print("[");
+              Serial.println(tempEEPROM);
+              //Serial.println("]");
               eeAddress += sizeof(float);
           }//for
 //-------------------------------- humidity
         for (int i=0; i <= 126; i++)
           {
               EEPROM.get(eeAddress, tempEEPROM);
-              Serial.print("[");
-              Serial.print(tempEEPROM);
-              Serial.println("]");
+              //Serial.print("[");
+              Serial.println(tempEEPROM);
+              //Serial.println("]");
               eeAddress += sizeof(float);
           }//for
      Serial.println("end");
